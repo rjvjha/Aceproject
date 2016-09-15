@@ -19,7 +19,7 @@ INSTALLED_APPS += (
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Show thumbnail generation errors
-THUMBNAIL_DEBUG = True
+THUMBNAIL_DEBUG = False
 
 # Allow internal IPs for debugging
 INTERNAL_IPS = [
