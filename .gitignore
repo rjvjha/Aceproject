@@ -15,12 +15,7 @@ build
 # SQLite3 database files:
 *.db
 *.sqlite3
-*.sqlite
-
-# Logs:
-*.log
-
-# Environment variables
+*.sqlite3# Environment variables
 local.env
 
 # Django stuff:
