@@ -15,7 +15,7 @@ BASE_DIR = dirname(dirname(dirname(__file__)))
 STATICFILES_DIRS = [join(BASE_DIR, 'static')]
 MEDIA_ROOT = join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
-
+STATIC_ROOT = '/var/www/aceproject/static'
 # Use Django templates using the new Django 1.8 TEMPLATES settings
 TEMPLATES = [
     {
@@ -105,8 +105,8 @@ DATABASES = {
         # The following settings are not used with sqlite3:
         'USER': 'django',
         'PASSWORD': 'q9wBsYkk0d',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
+        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '5432',                      # Set to empty string for default.
     }
 }
 
