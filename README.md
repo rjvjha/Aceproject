@@ -36,6 +36,10 @@ comes with virtualenv built-in. So create a virtual env by:
 
 Install all dependencies:
 
+*On some Linux systems like Ubuntu, Pillow will not install unless you install a C compiler and dependencies:
+
+$ sudo apt-get install libjpeg8-dev zlib1g-dev
+
  pip install -r requirements.txt
 
 Run migrations:
