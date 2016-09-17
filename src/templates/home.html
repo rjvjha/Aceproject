@@ -24,8 +24,8 @@
       <div class="row">
         <div class="col-md-8 col-sm-8">
           <h1>{% include "_brandname.html" %}</h1>
-          <p>A way to keep your things personal.</p>
-	  <a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up for Free!</a>
+          <p>A new way to keep your things personal.</p>
+	  <a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Join now for Free!</a>
         </div>
         <div class="col-md-4 col-sm-4">
 
@@ -61,7 +61,4 @@ It is built with Python using the Django Web Framework.</p>
 
 {% endblock container %}
 
-{% block scripts %}
-<script src="{% static 'site/js/site.js' %}"></script>
-{% endblock scripts %}
 
