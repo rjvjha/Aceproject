@@ -22,7 +22,7 @@
     {% endblock styles %}
 
    
-    {% block extrahead %}{% endblock extrahead %}
+   
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,7 +58,6 @@
           <ul class="nav navbar-nav navbar-right">
             {% block navbar-right %}
               {% if user.is_authenticated %}
-              
                 <li><a href="{% url 'notes:index' %}">Notes</a></li>
                 <li><a href="{% url 'notes:addnote' %}">Add note</a></li>
                 <li><a href="{% url 'notes:addtag' %}">Add tag</a></li>
@@ -74,7 +73,6 @@
                     <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
                   </ul>
                 </li>
-             
               {% endblock %}
           </ul>
           </ul>
@@ -137,9 +135,8 @@
 {% block scripts %}
     <!-- Bootstrap core JavaScript
     ================================================== -->
-     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-      
     {% endblock scripts %}
   </body>
 </html>
