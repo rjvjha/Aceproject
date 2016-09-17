@@ -100,8 +100,7 @@ DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in
     # os.environ
     'default': env.db(),
-                    # Set to empty string for default.
-    }
+
 }
 
 # Internationalization
